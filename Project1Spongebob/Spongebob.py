@@ -1,0 +1,38 @@
+from pygame import *
+from time import *
+from PIL import Image
+
+mixer.init()
+mixer.music.load('Music/Menu_Song.mp3')
+mixer.music.play(-1)
+starting_input = input("To begin, enter your name: ")
+while mixer.music.get_busy():
+    print("How would you like to play, " + starting_input + "?")
+    mixer.music.stop()
+print("Let's get started!")
+mixer.music.load('Music/Theme_Song.mp3')
+mixer.music.play()
+while mixer.music.get_busy():
+    sleep(11)
+    print("Who live in a pineapple under the sea?")
+    print("Spongebob Squarepants!")
+    sleep(3.5)
+    print("Absorbant, and yellow, and porous is he")
+    print("Spongebob Squarepants!")
+    sleep(3.7)
+    print("If nautical nonsense be something you wish")
+    print("Spongebob Squarepants!")
+    sleep(3.8)
+    print("Then drop on the deck and flop like a fish")
+    print("Spongebob Squarepants!")
+    sleep(4)
+    print("Spongebob Squarepants!")
+    sleep(2.2)
+    print("Spongebob Squarepants!")
+    sleep(2.2)
+    print("Spongebob Squarepants!")
+    sleep(2.2)
+    print("Spongebob Squarepants!")
+    sleep(10)
+    mixer.music.stop()
+print("test")
