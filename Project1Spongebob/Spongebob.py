@@ -8,6 +8,15 @@ def menu_sleep():
     sleep(3.5)
 
 
+def play_again():
+    play_again_input = input("Would you like to play again? Press q to quit, or press any key to go on another adventure! ")
+    if play_again_input == 'q':
+        return False
+    else:
+        print("Yay! Let's play again!!")
+        return True
+
+
 def squidward():
     print("this is the squidward function")
 
@@ -68,21 +77,23 @@ while adventure_choice != 'q':
     if adventure_choice == str(1):
         print("krusty_krab function called")
         # def krusty_krab function/method called
+        if not play_again():
+            break
     elif adventure_choice == str(2):
         print("jellyfishing function called")
         # def jellyfishing function/method called
+        if not play_again():
+            break
     elif adventure_choice == str(3):
         print("squidward function called")
         squidward()
-        #put this in its own method called play_again
-        play_again = input("Would you like to play again? Press q to quit or press enter to go on another adventure! ")
-        if play_again == 'q':
+        if not play_again():
             break
-        else:
-            print("Yay! Let's play again!!")
     elif adventure_choice == str(4):
         print("karate method called")
         # def karate function/method called
+        if not play_again():
+            break
     elif adventure_choice == 'q':
         print("Thanks for playing, we hope you had fun!!")
     else:
