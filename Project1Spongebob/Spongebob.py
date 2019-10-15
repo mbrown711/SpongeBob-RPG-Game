@@ -1,6 +1,6 @@
 from pygame import *
 from time import *
-from PIL import Image
+# from PIL import Image
 
 
 def menu_sleep():
@@ -13,6 +13,8 @@ def play_again():
     if play_again_input == 'q':
         return False
     else:
+        mixer.music.load('Music/Menu_Song.mp3')
+        mixer.music.play(-1)
         print("Yay! Let's play again!!")
         return True
 
@@ -23,12 +25,12 @@ def squidward():
 
 mixer.init()
 """
-print("Let's get started!")
+print("Welcome to the SpongeBob SquarePants Adventure Game! Let's get started!")
 mixer.music.load('Music/Theme_Song.mp3')
 mixer.music.play()
 while mixer.music.get_busy():
     sleep(11)
-    print("Who live in a pineapple under the sea?")
+    print("Who lives in a pineapple under the sea?")
     print("Spongebob Squarepants!")
     sleep(3.5)
     print("Absorbant, and yellow, and porous is he")
@@ -87,6 +89,7 @@ while adventure_choice != 'q':
     elif adventure_choice == str(3):
         print("squidward function called")
         squidward()
+        mixer.music.stop()
         if not play_again():
             break
     elif adventure_choice == str(4):
