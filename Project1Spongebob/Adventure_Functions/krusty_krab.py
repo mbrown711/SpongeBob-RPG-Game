@@ -22,12 +22,26 @@ try:
     flip = input("Flip! " + "\n")
     number_flips = 0
     while number_flips < 4:
-        if flip == 'f':
+        if flip.lower() == 'f':
             flip = input("Flip again! " + "\n")
             number_flips += 1
-        if flip != 'f':
+        elif flip.lower() == 'q':
+            break
+        else:
             flip = input("Wrong input! You need to press f to flip!" + "\n")
 except(ValueError, TypeError):
     print("Wrong input! You need to press f to flip!" + "\n")
 
 print("The krabby patty is cooked! Now we need to assemble it!")
+sleep(2)
+
+ingredients = ['cheese', 'patty', 'ketchup', 'buns', 'mustard', 'onions', 'tomato', 'lettuce']
+
+print("Place the below ingredients in the correct order to make a krabby patty! ")
+sleep(2)
+
+for ingredient in ingredients:
+    print(ingredient)
+    sleep(2)
+
+
