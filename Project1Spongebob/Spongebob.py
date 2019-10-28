@@ -14,13 +14,23 @@ def menu_sleep():
 def play_again():
     play_again_input = input("Would you like to play again? Press q to quit, or press any key to go on another "
                              "adventure! ")
+
     if play_again_input == 'q':
         return False
     else:
-        mixer.music.load('Music/Menu_Song.mp3')
+        mixer.music.load('Menu_Song.mp3')
         mixer.music.play(-1)
         print("Yay! Let's play again!!")
         return True
+
+def menu():
+    menu_sleep()
+    print("Press 1 to go work at the Krusty Krab")
+    menu_sleep()
+    print("Press 2 to go jellyfishing with Patrick")
+    menu_sleep()
+    print("Press 3 to practice karate with Sandy")
+    menu_sleep()
 
 def krusty_krab():
     mixer.init()
@@ -29,6 +39,8 @@ def krusty_krab():
     while mixer_music.get_busy():
         sleep(1)
 
+    mixer.music.load("Menu_Song.mp3")
+    mixer.music.play(-1)
     print("Hey, look! It's Mr. Krabs! ")
     sleep(2)
     print("Spongebob! Enough lolligagin' around me boy! It's time to make some krabby patties!")
@@ -56,8 +68,8 @@ def krusty_krab():
     print("The krabby patty is cooked! Now we need to assemble it!")
     sleep(2)
 
-    shown_ingredients = ['cheese', 'patty', 'pickles' 'ketchup', 'bottom bun', 'mustard', 'onions', 'top bun' 'tomato',
-                         'lettuce']
+    shown_ingredients = ['cheese', 'patty', 'pickles', 'ketchup', 'bottom bun', 'mustard', 'onions', 'top bun',
+                         'tomato', 'lettuce']
 
     print("Place the below ingredients in the correct order to make a krabby patty! ")
     sleep(2)
@@ -66,6 +78,7 @@ def krusty_krab():
         print(shown_ingredient)
         sleep(2)
 
+    # This will be a tuple, since it should not be changed at all
     correct_order_ingredients = ('bottom bun', 'patty', 'lettuce', 'cheese', 'onions', 'tomato', 'ketchup', 'mustard',
                                  'pickles', 'top bun')
 
@@ -75,7 +88,7 @@ def krusty_krab():
     counter = 0
     wrong_input = 0
 
-    while counter < 2:
+    while counter < 9:
         if user_input == correct_order_ingredients[counter]:
             counter += 1
             user_entered_ingredients.append(user_input)
@@ -121,8 +134,6 @@ def jellyfishing_patrick():
             sys.exit()
         else:
             bring_net = str(input("Invalid input! Enter 'go' when you're ready! ").lower())
-
-    mixer.music.stop()
 
     print("Great! Let's go jellyfishing!")
     sleep(2)
@@ -213,7 +224,7 @@ def sandy_karate():
 mixer.init()
 
 print("Welcome to the SpongeBob SquarePants Adventure Game! Let's get started!")
-mixer.music.load('Music/Theme_Song.mp3')
+mixer.music.load('Theme_Song.mp3')
 mixer.music.play()
 while mixer.music.get_busy():
     sleep(11)
@@ -239,7 +250,7 @@ while mixer.music.get_busy():
     sleep(10)
     mixer.music.stop()
 
-mixer.music.load('Music/Menu_Song.mp3')
+mixer.music.load('Menu_Song.mp3')
 mixer.music.play(-1)
 
 print(
