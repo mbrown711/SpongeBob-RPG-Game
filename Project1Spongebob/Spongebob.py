@@ -1,10 +1,15 @@
 import os
+
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
+os.environ['ApplePersistenceIgnoreState: Existing state will not be touched. New state will be written to (null)'] = \
+    "hide"
 from pygame import *
 from time import *
-from PIL import Image
+#from PIL import Image
+import pyglet
 from random import *
 import sys
+
 
 def menu_sleep():
     # Sleep for 3.5 seconds during the menu presentation
@@ -18,28 +23,20 @@ def play_again():
     if play_again_input == 'q':
         return False
     else:
-        mixer.music.load('Menu_Song.mp3')
+        mixer.music.load('Songs/Menu_Song.mp3')
         mixer.music.play(-1)
         print("Yay! Let's play again!!")
         return True
 
-def menu():
-    menu_sleep()
-    print("Press 1 to go work at the Krusty Krab")
-    menu_sleep()
-    print("Press 2 to go jellyfishing with Patrick")
-    menu_sleep()
-    print("Press 3 to practice karate with Sandy")
-    menu_sleep()
 
 def krusty_krab():
     mixer.init()
-    mixer.music.load('krabby_patty.mp3')
+    mixer.music.load('Songs/krabby_patty.mp3')
     mixer.music.play(1)
     while mixer_music.get_busy():
         sleep(1)
 
-    mixer.music.load("Menu_Song.mp3")
+    mixer.music.load('Songs/Menu_Song.mp3')
     mixer.music.play(-1)
     print("Hey, look! It's Mr. Krabs! ")
     sleep(2)
@@ -102,6 +99,22 @@ def krusty_krab():
             wrong_input += 1
             user_input = input("Incorrect! Guess again! ")
 
+    animation = pyglet.resource.animation('Images/krabby_patty.gif')
+    sprite = pyglet.sprite.Sprite(animation)
+    # create a window and set it to the image size
+    win = pyglet.window.Window(width=sprite.width, height=sprite.height)
+    # set window background color = r, g, b, alpha
+    # each value goes from 0.0 to 1.0
+    green = 0, 1, 0, 1
+    pyglet.gl.glClearColor(*green)
+
+    @win.event
+    def on_draw():
+        win.clear()
+        sprite.draw()
+
+    pyglet.app.run()
+
     print()
     print("Congratulations! You've made your first Krabby Patty!" + "\n")
 
@@ -117,9 +130,10 @@ def krusty_krab():
         print("You missed " + str(wrong_input) + " ingredients!")
         print("Mr. Krabs is not going to be happy - you need to brush up on your Krabby Patty training!")
 
+
 def jellyfishing_patrick():
     mixer.init()
-    mixer.music.load('Jellyfishing_Song.mp3')
+    mixer.music.load('Songs/Jellyfishing_Song.mp3')
     mixer.music.play(-1)
 
     print("Hey, look! It's Patrick! Hi Patrick! ")
@@ -169,10 +183,25 @@ def jellyfishing_patrick():
     if catch:
         # When the user catches the jellyfish, show the image of Spongebob and Patrick
         # catching a jellyfish:
-        with Image.open('Jellyfishing.jpg') as img:
-            img.show()
+        # pick an animated gif file you have in the working directory
+        animation = pyglet.resource.animation('Images/jellyfishing.gif')
+        sprite = pyglet.sprite.Sprite(animation)
+        # create a window and set it to the image size
+        win = pyglet.window.Window(width=sprite.width, height=sprite.height)
+        # set window background color = r, g, b, alpha
+        # each value goes from 0.0 to 1.0
+        green = 0, 1, 0, 1
+        pyglet.gl.glClearColor(*green)
+
+        @win.event
+        def on_draw():
+            win.clear()
+            sprite.draw()
+
+        pyglet.app.run()
 
     print("Great job - you caught the jellyfish!")
+
 
 def sandy_karate():
     print("It's our old friend, Sandy Cheeks! Hi Sandy! ")
@@ -213,10 +242,21 @@ def sandy_karate():
             chop = input("Invalid input! You need to enter 'chop' to to chop the wood in half!" + "\n").lower()
 
     if chop:
-        # When the user catches the jellyfish, show the image of Spongebob and Patrick
-        # catching a jellyfish:
-        with Image.open('Karate.png') as img:
-            img.show()
+        animation = pyglet.resource.animation('Images/karate.gif')
+        sprite = pyglet.sprite.Sprite(animation)
+        # create a window and set it to the image size
+        win = pyglet.window.Window(width=sprite.width, height=sprite.height)
+        # set window background color = r, g, b, alpha
+        # each value goes from 0.0 to 1.0
+        green = 0, 1, 0, 1
+        pyglet.gl.glClearColor(*green)
+
+        @win.event
+        def on_draw():
+            win.clear()
+            sprite.draw()
+
+        pyglet.app.run()
 
     print("You did it! HIIII-YAAAA!!!")
 
@@ -224,7 +264,7 @@ def sandy_karate():
 mixer.init()
 
 print("Welcome to the SpongeBob SquarePants Adventure Game! Let's get started!")
-mixer.music.load('Theme_Song.mp3')
+mixer.music.load('Songs/Theme_Song.mp3')
 mixer.music.play()
 while mixer.music.get_busy():
     sleep(11)
@@ -250,7 +290,7 @@ while mixer.music.get_busy():
     sleep(10)
     mixer.music.stop()
 
-mixer.music.load('Menu_Song.mp3')
+mixer.music.load('Songs/Menu_Song.mp3')
 mixer.music.play(-1)
 
 print(
