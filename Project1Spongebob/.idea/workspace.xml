@@ -3,21 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="178e55b5-8f6c-4275-bdc4-c0ba80123b53" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Songs/Menu_Song.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Songs/SpongeBob SquarePants Music - Kung Fu Saturdays.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Songs/SpongeBob SquarePants Production Music - Vergnügungspark.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Songs/SpongeBob SquarePants Production Music - Witty Fellow.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adventure_Functions/krabby_patty.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/jellyfishing.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/karate.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/krabby_patty.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Music/Menu_Song.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Music/Theme_Song.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Songs/menu_2.mp3" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Spongebob.py" beforeDir="false" afterPath="$PROJECT_DIR$/Spongebob.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/activate" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/activate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/activate.csh" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/activate.csh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/activate.fish" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/activate.fish" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/easy_install" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/easy_install" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/easy_install-3.7" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/easy_install-3.7" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/pip" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/pip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/pip3" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/pip3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/pip3.7" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/pip3.7" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/pip-19.0.3.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/pip-19.0.3.dist-info/RECORD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/setuptools-40.8.0.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/setuptools-40.8.0.dist-info/RECORD" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -222,6 +215,7 @@
       <workItem from="1572306302725" duration="187000" />
       <workItem from="1572306617100" duration="4200000" />
       <workItem from="1572316283419" duration="751000" />
+      <workItem from="1572319936462" duration="1353000" />
     </task>
     <servers />
   </component>

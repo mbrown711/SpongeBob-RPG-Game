@@ -1,5 +1,6 @@
 import os
-
+# This hides the PyGame message in the beginning
+# I'll be crediting PyGame and Pillow in the "Special Thanks" section of the documentation
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
 from pygame import *
 from time import *
@@ -74,7 +75,7 @@ def krusty_krab():
     # the patty 5 more times to reach 10
     number_flips = randint(3, 7)
     while number_flips < 10:
-        flip = input("Flip! " + "\n ").lower()
+        flip = input("Flip! ").lower()
         if flip == 'f':
             number_flips += 1
         elif flip == 'q':
