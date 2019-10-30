@@ -4,6 +4,7 @@ Pace University - CS 632P<br/>
 Project 1<br/>
 10/30/19<br/>
 
+*Documentation also in PDF form in folder*
 
 Table of Contents:
 ==================
@@ -12,7 +13,7 @@ Table of Contents:
 
 [What's Included](#what's-included)
 
-[Flowchart of Game flow](#flowchart-of-gameflow)
+[Flowchart of Game flow](#flowchart-of-game-flow)
 
 [Getting Started & Preparing your Environment](#getting-started-&-preparing-your-environment)
 
@@ -124,7 +125,7 @@ pip3 install -r Requirements.txt
 
 ![cd windows.JPG](https://github.com/mbrown711/Screenshots-for-CS632P-Project1/blob/master/cd%20windows.JPG)
   
-  4. Activate your virtual environment by typing in ```source ./venv/bin/activate``` on macOS or ```source ./venv/Scripts/activate``` on Windows:
+  4. Activate your virtual environment by typing in ```source ./venv/bin/activate``` on macOS or ```venv\Scripts\activate``` on Windows:
 
 ![activate venv.png](https://github.com/mbrown711/Screenshots-for-CS632P-Project1/blob/master/activate%20venv.png)
   
@@ -442,7 +443,7 @@ Various test we ran are shown below with screen shots, showing each adventure, a
   * Music stops successfully.
   * User is prompted if they want to play again.
   
-Screen shots showing testing below:
+Screen shots show testing below:
 
 ![flip input.png](https://github.com/mbrown711/Screenshots-for-CS632P-Project1/blob/master/flip%20input.png)
 
@@ -465,7 +466,7 @@ Screen shots showing testing below:
   * Music stops successfully.
   * User is prompted if they want to play again.
   
-Screen shots showing testing below:
+Screen shots show testing below:
 
 ![jellyfishing test.png](https://github.com/mbrown711/Screenshots-for-CS632P-Project1/blob/master/jellyfishing%20test.png)
 
@@ -486,7 +487,7 @@ Screen shots showing testing below:
   * Music stops successfully.
   * User is prompted if they want to play again.
   
-Screen shots showing testing below:
+Screen shots show testing below:
 
 ![Sandy tests.png](https://github.com/mbrown711/Screenshots-for-CS632P-Project1/blob/master/Sandy%20tests.png)
 
