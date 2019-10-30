@@ -216,13 +216,13 @@ def sandy_karate():
     print("I hope you've been practicing your karate chopping skills! Let's go! ")
     sleep(3)
 
-    hiya_continue = str(input("Enter 'hi-ya!' to continue! ").lower())
+    hiya_continue = input("Enter 'hi-ya!' to continue! ").lower()
     while hiya_continue != 'hi-ya!':
         if hiya_continue == 'q':
             print("Thanks for playing! We hope you had fun!")
             sys.exit()
         else:
-            hiya_continue = str(input("Invalid input! Enter 'hi-ya!' to continue! ").lower())
+            hiya_continue = input("Invalid input! Enter 'hi-ya!' to continue! ").lower()
 
     print("Ok Spongebob, let's try to chop this dang-fangled piece of wood in half.")
     sleep(3)
