@@ -64,7 +64,7 @@ def krusty_krab():
     print("Mr. Krabs wants you to make krabby patties for some hungry customers!")
     sleep(4)
     print("To flip the patty, press 'f'. You'll know when it's ready!")
-    sleep(4)
+    sleep(3)
     print("Ready.....")
     sleep(2)
     print("Set.....")
@@ -127,10 +127,9 @@ def krusty_krab():
             wrong_input += 1
             user_input = input("Incorrect! Guess again! ")
 
-    # Once the user has successfully built the patty, image opens of a krabby patty
+    # Once the user has successfully built the krabby patty, image opens of a krabby patty
     show_krabby_patty()
 
-    print()
     print("Congratulations! You've made your first Krabby Patty!" + "\n")
 
     if wrong_input == 0:
@@ -232,10 +231,10 @@ def sandy_karate():
     print("After you see 'HIIII-YAA!', enter 'chop' until you've chopped through the wood!")
     sleep(3.5)
 
-    # User enters "chop" until spongebob is close enough to the jelly fish
+    # User enters "chop" until spongebob is chops the wood in half
     # Random number between 5 and 7 is set, and user has to "chop" 15 times
     # Each loop up to the random number increases the count by 1
-    # Once the count reaches a certain number, display the picture of spongebob catching the jellyfish
+    # Once the count reaches a certain number, display the picture of Spongebob doing karate
 
     chop = " "
     chop_num = randint(5, 7)

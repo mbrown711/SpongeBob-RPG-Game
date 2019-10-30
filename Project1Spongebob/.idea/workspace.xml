@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="178e55b5-8f6c-4275-bdc4-c0ba80123b53" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adventure_Functions/krabby_patty.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/jellyfishing.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/karate.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/krabby_patty.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Music/Menu_Song.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Music/Theme_Song.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Songs/menu_2.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CS 632P - Project 1 - Matt Brown.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Spongebob.py" beforeDir="false" afterPath="$PROJECT_DIR$/Spongebob.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -215,7 +209,10 @@
       <workItem from="1572306302725" duration="187000" />
       <workItem from="1572306617100" duration="4200000" />
       <workItem from="1572316283419" duration="751000" />
-      <workItem from="1572319936462" duration="1353000" />
+      <workItem from="1572319936462" duration="1741000" />
+      <workItem from="1572377530139" duration="155000" />
+      <workItem from="1572379054292" duration="295000" />
+      <workItem from="1572398850560" duration="2371000" />
     </task>
     <servers />
   </component>
