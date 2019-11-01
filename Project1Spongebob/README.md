@@ -500,7 +500,7 @@ Screen shots show testing below:
 
 ## Known Bugs:
 
-* Program is not compatible with Python 3.8. Third party packages return errors when runnin on Python 3.8.
+* Program is not compatible with Python 3.8. Third party packages return errors when running on Python 3.8.
 * We have noticed 2 times out of several tests that the music played was very slowed down.
 * Sometimes right when a song will begin to play, there is sound distortion, but it is very brief. 
 
