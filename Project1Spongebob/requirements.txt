@@ -3,7 +3,7 @@ future==0.18.1
 isort==4.3.21
 lazy-object-proxy==1.4.3
 mccabe==0.6.1
-Pillow==6.2.1
+Pillow==6.2.2
 pygame==1.9.6
 pylint==2.4.3
 six==1.12.0
